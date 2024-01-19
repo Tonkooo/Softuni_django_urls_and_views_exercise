@@ -84,7 +84,7 @@ DATABASES = {
     },
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'django_urls_and_views_database',
+        'NAME': 'django_urls_and_views_database_v1',
         'USER': 'postgres',
         'PASSWORD': '1234',
         'HOST': '127.0.0.1',
