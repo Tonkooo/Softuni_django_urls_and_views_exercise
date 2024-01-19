@@ -16,8 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django_urls_and_views_exercise.departments.views import department_2_details, index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("", include('django_urls_and_views_exercise.core.urls')),
     path("departments/", include('django_urls_and_views_exercise.departments.urls')),
+    # path("employees/", include([
+    #     path("asd/", index),
+    #     path("asd2/", department_2_details)
+    # ]))
 ]

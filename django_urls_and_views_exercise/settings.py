@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_urls_and_views_exercise.departments'
+    'django_urls_and_views_exercise.departments',
+    'django_urls_and_views_exercise.core',
 
 ]
 
