@@ -11,5 +11,11 @@ def index(request,  *args, **kwargs):
     return HttpResponse(content)
 
 def index(request, *args, **kwargs):
-    context = {}
+    context = {
+        "title": "Request data",
+        "args": args,
+        "kwargs": request.path,
+        "method": request.method,
+        "user": request.user,
+    }
     return render(request, 'core/index.html', context)
