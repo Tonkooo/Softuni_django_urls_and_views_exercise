@@ -10,3 +10,6 @@ def index(request,  *args, **kwargs):
 
     return HttpResponse(content)
 
+def index(request, *args, **kwargs):
+    context = {}
+    return render(request, 'core/index.html', context)
